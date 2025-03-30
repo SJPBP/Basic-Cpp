@@ -1,0 +1,31 @@
+line 1 from the file
+line 2
+line 3
+line 4
+---
+Write a program that 
+reads in the 
+lines from a text file 
+and displays 
+them with line numbers 
+and a colon. 
+Limit the display to 24
+lines at a time 
+per the instructions.
+You can hard code the 
+file name if 
+needed.
+---
+Write a program that 
+reads in the 
+lines from a text file 
+and displays 
+them with line numbers 
+and a colon. 
+Limit the display to 24
+lines at a time 
+per the instructions.
+You can hard code the 
+file name if 
+needed.
+---

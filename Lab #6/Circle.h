@@ -1,0 +1,46 @@
+#ifndef LAB__6_CIRCLE_H
+#define LAB__6_CIRCLE_H
+
+// Version 2 (Added Exception Handling
+
+class Circle
+{
+    private:
+        double Radius;
+        double Pi;
+
+    public:
+        Circle();
+
+        Circle(double);
+
+
+        class NegativeRadius{
+        private:
+                double value;
+        public:
+            NegativeRadius(double r) {
+                value = r;
+            }
+            double getValue() {
+                return value;
+            }
+
+        };
+
+
+        void setRadius(double);
+
+        double getArea() const;
+
+        double getDiameter() const;
+
+        double getCircumference() const;
+
+        double getRadius() const
+        { return Radius; }
+
+};
+
+
+#endif //LAB__3_CIRCLE_H

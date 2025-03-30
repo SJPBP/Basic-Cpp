@@ -1,0 +1,42 @@
+//
+// Created by test on 12/5/23.
+//
+
+#ifndef LAB__13_TRIANGLE_H
+#define LAB__13_TRIANGLE_H
+
+#include <cmath>
+
+class Triangle
+{
+    private:
+        double side1, side2, side3;
+
+    public:
+        Triangle(double s1, double s2)
+        {
+            side1 = s1;
+            side2 = s2;
+            side3 = compute_side3();
+        }
+
+        double compute_side3()
+        {
+            return hypot(side1, side2);
+        }
+
+        double compute_perimeter()
+        {
+            return side1 + side2 + side3;
+        }
+
+        double compute_area()
+        {
+            double s = compute_perimeter() / 2;
+
+            return sqrt(s * (s - side1) * (s - side2) * (s - side3) );
+        }
+
+};
+
+#endif //LAB__13_TRIANGLE_H

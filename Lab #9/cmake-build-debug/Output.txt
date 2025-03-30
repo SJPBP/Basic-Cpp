@@ -1,0 +1,105 @@
+Year: 1993 - Gas Prices per Gallon
+Highest price: $ 1.107
+Lowest price: $ 0.999
+Average price: $ 1.07115
+
+Year: 1994 - Gas Prices per Gallon
+Highest price: $ 1.165
+Lowest price: $ 0.992
+Average price: $ 1.07787
+
+Year: 1995 - Gas Prices per Gallon
+Highest price: $ 1.246
+Lowest price: $ 1.106
+Average price: $ 1.15771
+
+Year: 1996 - Gas Prices per Gallon
+Highest price: $ 1.33
+Lowest price: $ 1.126
+Average price: $ 1.24453
+
+Year: 1997 - Gas Prices per Gallon
+Highest price: $ 1.288
+Lowest price: $ 1.158
+Average price: $ 1.24425
+
+Year: 1998 - Gas Prices per Gallon
+Highest price: $ 1.148
+Lowest price: $ 0.979
+Average price: $ 1.07171
+
+Year: 1999 - Gas Prices per Gallon
+Highest price: $ 1.315
+Lowest price: $ 0.949
+Average price: $ 1.17606
+
+Year: 2000 - Gas Prices per Gallon
+Highest price: $ 1.711
+Lowest price: $ 1.304
+Average price: $ 1.52273
+
+Year: 2001 - Gas Prices per Gallon
+Highest price: $ 1.748
+Lowest price: $ 1.101
+Average price: $ 1.4603
+
+Year: 2002 - Gas Prices per Gallon
+Highest price: $ 1.499
+Lowest price: $ 1.142
+Average price: $ 1.38596
+
+Year: 2003 - Gas Prices per Gallon
+Highest price: $ 1.787
+Lowest price: $ 1.487
+Average price: $ 1.60302
+
+Year: 2004 - Gas Prices per Gallon
+Highest price: $ 2.104
+Lowest price: $ 1.552
+Average price: $ 1.89469
+
+Year: 2005 - Gas Prices per Gallon
+Highest price: $ 3.117
+Lowest price: $ 1.824
+Average price: $ 2.31446
+
+Year: 2006 - Gas Prices per Gallon
+Highest price: $ 3.083
+Lowest price: $ 2.246
+Average price: $ 2.61827
+
+Year: 2007 - Gas Prices per Gallon
+Highest price: $ 3.258
+Lowest price: $ 2.213
+Average price: $ 2.84347
+
+Year: 2008 - Gas Prices per Gallon
+Highest price: $ 4.165
+Lowest price: $ 1.67
+Average price: $ 3.2989
+
+Year: 2009 - Gas Prices per Gallon
+Highest price: $ 2.746
+Lowest price: $ 1.737
+Average price: $ 2.40583
+
+Year: 2010 - Gas Prices per Gallon
+Highest price: $ 3.106
+Lowest price: $ 2.664
+Average price: $ 2.83506
+
+Year: 2011 - Gas Prices per Gallon
+Highest price: $ 4.018
+Lowest price: $ 3.124
+Average price: $ 3.57642
+
+Year: 2012 - Gas Prices per Gallon
+Highest price: $ 3.997
+Lowest price: $ 3.324
+Average price: $ 3.67964
+
+Year: 2013 - Gas Prices per Gallon
+Highest price: $ 3.851
+Lowest price: $ 3.373
+Average price: $ 3.65144
+

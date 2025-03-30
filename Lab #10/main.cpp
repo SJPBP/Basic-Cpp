@@ -1,0 +1,89 @@
+#include <iostream>
+#include <list>
+
+using namespace std;
+
+void displayList(list <int>& list, string message);
+
+void insertToList(list <int>& list, int num);
+
+void removeEnds(list <int>& list);
+
+int main() {
+    list <int> myList;
+
+    for (int x = 0; x < 200; x += 20)
+    {
+        myList.push_back(x);
+    }
+
+    string message = "The original list is:";
+
+    displayList(myList, message);
+
+    int temp[] = {10, 30, 50, 70, 90, 110, 130, 150, 170};
+
+    for (int x : temp)
+    {
+        insertToList(myList, x);
+    }
+
+    message = "The list with the additional number is:";
+
+    displayList(myList, message);
+
+    myList.reverse();
+
+    message = "The list in reverse is:";
+
+    displayList(myList, message);
+
+    removeEnds(myList);
+
+    message = "The list with the ends removed:";
+
+    displayList(myList, message);
+
+    return 0;
+}
+
+void displayList(list <int>& list, string message)
+{
+    cout << message << endl;
+
+    for (auto i : list)
+    {
+        cout << i << " ";
+    }
+
+    cout << endl;
+
+    cout << "The number of list nodes is: " << list.size() << endl;
+
+    cout << endl;
+
+}
+
+// value = {10, 30, 50, 70, 90, 110, 130, 150, 170};
+void insertToList(list <int>& list, int num)
+{
+    int temp[] = {10, 30, 50, 70, 90, 110, 130, 150, 170};
+
+    int prev = 0;
+
+    for (auto i = list.begin(); i != list.end(); i++)
+    {
+        if (prev < num && num < *i)
+        {
+            list.insert(i, num);
+        }
+        prev = *i;
+    }
+
+}
+
+void removeEnds(list <int>& list)
+{
+    list.pop_front();
+    list.pop_back();
+}

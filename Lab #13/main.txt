@@ -1,0 +1,30 @@
+#include <iostream>
+#include <iomanip>
+#include "Triangle.h"
+
+using namespace std;
+
+int main()
+{
+    double side1, side2, side3;
+
+    cout << "Computes the perimeter of a Triangle from 2 sides." << endl;
+    cout << "Enter the length of side 1: ";
+    cin >> side1;
+    cout << "Enter the length of side 2: ";
+    cin >> side2;
+
+    Triangle triangle(side1, side2);
+
+
+    cout << setprecision(2) << fixed;
+
+    cout << "\nThe side lengths are:" << endl;
+    cout << "\t side 1: " << side1 << "\t side 2: " << side2 << "\t side 3: " << triangle.compute_side3();
+    cout << endl << endl;
+    cout << "The perimeter is: " << triangle.compute_perimeter() << endl << endl;
+    cout << "The area of the triangle is: " << triangle.compute_area() << endl;
+
+    return 0;
+}
+

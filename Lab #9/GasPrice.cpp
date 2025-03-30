@@ -1,0 +1,39 @@
+//
+// Created by user on 10/31/23.
+//
+
+#include "GasPrice.h"
+#include <bits/stdc++.h>
+using namespace std;
+
+/*
+double GasPrice::getHighestPrice() const
+{
+    return *max_element(GasPrice::Price.begin(), GasPrice::Price.end());
+}
+
+double GasPrice::getLowestPrice() const
+{
+    return *min_element(GasPrice::Price.begin(), GasPrice::Price.end());
+}
+
+
+double GasPrice::getAveragePrice(string y, multimap<string , GasPrice> d)
+{
+
+    for (auto i = GasPrice::Price)
+    {
+        sum += i;
+        count ++;
+    }
+
+    // Avoid division by zero if the container is empty
+    if (count == 0) {
+        return 0.0; // or handle this case appropriately
+    }
+
+    return sum / count;
+
+}
+
+*/

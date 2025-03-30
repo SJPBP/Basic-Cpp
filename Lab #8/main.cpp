@@ -1,0 +1,97 @@
+#include<iostream>
+#include <fstream>
+#include <iomanip>
+#include <vector>
+
+#include "Product.h"
+
+using namespace std;
+
+void display_products(vector<Product> p);
+
+int main() {
+    // Product file
+    fstream productFile;
+
+    // Product Info
+    string productName;
+    int productUnits;
+    double productPrice;
+
+    // Input Variables
+    string userProductName;
+    char userProductChange;
+    double amount;
+
+    // Instances the Product class vector
+    vector<Product> p;
+
+    productFile.open("productInfo.txt", ios::in);
+
+    // Check file successfully opened
+    if (productFile.fail())
+    {
+        cout << "ERROR: File wasn't successfully opened!";
+        exit(1);
+    }
+
+    while (productFile >> productName >> productPrice >> productUnits) {
+        Product productInstance(productName, productPrice, productUnits);
+
+        p.push_back(productInstance);
+    }
+    productFile.close();
+
+    display_products(p);
+
+    cout << setw(30)<< "Name of product to change: ";
+    cin >> userProductName;
+
+    cout << "Enter p, u, or r to change price, units, or reorder point: ";
+    cin >> userProductChange;
+
+    cout << "What would you like to change it to? ";
+    cin >> amount;
+
+    cout << endl;
+
+    for(int i = 0; i < 6; i++)
+    {
+        if (p[i].getName() == userProductName)
+        {
+            if (userProductChange == 'p')
+            {
+                p[i].setPrice(amount);
+            }
+            else if (userProductChange == 'u')
+            {
+                p[i].setUnits(amount);
+            }
+            else if (userProductChange == 'r')
+            {
+                p[i].setReorderPoint(amount);
+            }
+        }
+    }
+    display_products(p);
+
+    return 0;
+}
+
+
+void display_products(vector<Product> p)
+{
+    cout << fixed << setprecision(2);
+
+    cout << "\n\tThe list of products is:" << endl << endl;
+    cout << setw(10) << "Name   " << setw(13) << "Price" << setw(11) << "Units" << setw(11) << "  Reorder Pt" << endl;
+
+    for(int i = 0; i < 6; i++)           // (auto prod1 : p)
+    {
+        cout << "   " << setw(10) << left << p[i].getName();
+        cout << setw(10) << right << p[i].getPrice();
+        cout << setw(10) << p[i].getUnits();
+        cout << setw(10) << p[i].getReorderPoint();
+        cout << endl;
+    }
+}
